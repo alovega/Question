@@ -18,12 +18,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import { MAT_RIPPLE_GLOBAL_OPTIONS} from '@angular/material/core';
 import { AppGlobalRippleOptions } from './app-global-ripple-options.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
