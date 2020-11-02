@@ -1,0 +1,153 @@
+mat-toolbar.mat-primary {
+    background: #ff7361;
+    color: #fff;
+}
+
+mat-toolbar-row, .mat-toolbar-single-row {
+  height: Auto;
+  padding: unset;
+}
+
+.row{
+  width: inherit;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: auto;
+  width: 60%;
+  color: #fff;
+}
+
+.navlink {
+  display: flex;
+}
+
+.navIcon{
+  height: 19px;
+  width: 24px;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+p {
+  padding: 2px;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+.vl {
+  border-left: 2px solid #90504c;
+  height: 19px;
+  margin-top: 10px;
+}
+
+.container{
+  display: flex;
+  padding: unset;
+  margin: unset;
+}
+
+a {
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 4px;
+}
+
+a:hover {
+  color: #2f3239;
+}
+
+.nav-2{
+  background-color: #2f3239;
+}
+
+.md-form input[type=text] {
+  border-bottom: none;
+}
+
+.md-form input[type=text]:focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.md-form .form-control {
+  margin: unset;
+}
+
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+  padding: 2px;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+.nav-button{
+  width: auto;
+  cursor: pointer;
+  background-color: #2f3239;
+  color: #fff;
+  height: 39px;
+  border-radius: 2px;
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-style: normal;
+  font-size: 14px;
+}
+.nav{
+  width: auto;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.fxLayout{
+  background-color: #2f3239;
+  width: 100%;
+}
+
+.button{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mat-toolbar-row{
+  display: block;
+}
+
+.mat-sidenav{
+  width: 100%;
+}
+
+.nav-button:hover{
+  background-color: #ff7361 !important;
+}
+
+.dropdown{
+  color: black;
+}
+
+.dropdown:hover {
+  background-color: #ff7361;
+  color: #fff;
+}
+.container-2 {
+  justify-content: space-around;
+  align-items: center;
+}
+
