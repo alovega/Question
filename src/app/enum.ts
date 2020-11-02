@@ -13,5 +13,10 @@ export enum Icons {
   arrow_drop_down = 'arrow_drop_down',
   home = 'home',
   sign_out = 'sign_out',
-  account_circle = 'account_circle'
+  account_circle = 'account_circle',
+  close = 'close',
+  info = 'info',
+  question = 'question',
+  list = 'list',
+
 }

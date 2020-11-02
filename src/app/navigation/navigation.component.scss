@@ -151,3 +151,24 @@ a:hover {
   align-items: center;
 }
 
+.side-button{
+    color: white;
+    background-color: #ff7361;
+    width: 90%;
+    margin: 15px;
+}
+
+.side-form{
+  background-color: wheat;
+}
+.side-input{
+  background-color: white !important;
+  margin: 15px !important;
+  color: #000;
+  width: 90%;
+  border-radius: 2px;
+}
+
+.side-form::placeholder{
+  color: #000;
+}

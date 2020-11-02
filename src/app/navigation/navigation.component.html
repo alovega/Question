@@ -137,7 +137,11 @@
   <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav>
       <mat-nav-list>
-        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a (click)="sidenav.toggle()" href="" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="close" style="height: 40px;"></mat-icon>
+          </span>
+        </a>
         <a href="#" mat-list-item>
           <span class="navlink">
             <mat-icon class="navIcon" svgIcon="person"></mat-icon>
@@ -156,12 +160,50 @@
             <p> Badges </p>
           </span>
         </a>
-        <a href="#" mat-list-item>Menu Item 1</a>
-        <a href="#" mat-list-item>Menu Item 2</a>
-        <a href="#" mat-list-item>Menu Item 3</a>
-        <a href="#" mat-list-item>Menu Item 4</a>
-        <a href="#" mat-list-item>Menu Item 5</a>
-        <a href="#"mat-list-item>Menu Item 6</a>
+        <a href="#" mat-raised-button class="side-button">Ask Question</a>
+        <form class="form-inline mr-auto side-form">
+          <div class="md-form my-0" style="width: 100%;">
+            <button mat-raised-button class="side-button">Search</button>
+            <input class="form-control side-input" type="text" placeholder="search here..." onfocus="this.placeholder=''"
+            onblur="this.placeholder='search here...'" aria-label="Search">
+          </div>
+        </form>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="question"></mat-icon>
+            <p> Ask Question </p>
+          </span>
+        </a>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="list"></mat-icon>
+            <p> Questions </p>
+          </span>
+        </a>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="home"></mat-icon>
+            <p> Home </p>
+          </span>
+        </a>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="account_circle"></mat-icon>
+            <p> Profile </p>
+          </span>
+        </a>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="info"></mat-icon>
+            <p> Contact Us </p>
+          </span>
+        </a>
+        <a href="#" mat-list-item>
+          <span class="navlink">
+            <mat-icon class="navIcon" svgIcon="sign_out"></mat-icon>
+            <p> Logout </p>
+          </span>
+        </a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content>
