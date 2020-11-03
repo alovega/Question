@@ -91,3 +91,9 @@ h5{
 .i:hover{
   color: #ff7361;
 }
+
+@media only screen and (max-width: 960px){
+  .footer{
+    display: inline-grid;
+  }
+}
