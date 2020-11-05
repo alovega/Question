@@ -44,6 +44,9 @@ p {
   border-right: none;
   border-bottom-color: #43464b;
 }
+.list-group-item:focus{
+  outline: none;
+}
 .card{
   background-color: #2f3239;
   border-radius: 0px;

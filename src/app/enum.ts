@@ -18,5 +18,6 @@ export enum Icons {
   info = 'info',
   question = 'question',
   list = 'list',
+  pen_square = 'pen_square'
 
 }

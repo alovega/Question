@@ -28,6 +28,7 @@ import { BadgeComponent } from './badge/badge.component';
 import { CardComponent } from './card/card.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { LoginComponent } from './login/login.component';
     BadgeComponent,
     CardComponent,
     DataTableComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
