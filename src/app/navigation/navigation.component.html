@@ -17,7 +17,7 @@
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
         <div fxLayout="row" fxLayoutAlign="space-between">
           <div class="container" fxFlex="20" style="height: 35px;">
-            <a routerLink="/home">
+            <a routerLink="/login">
               <span class="navlink">
                 <mat-icon class="navIcon" svgIcon="person"></mat-icon>
                 <p> Login Area </p>
@@ -40,7 +40,7 @@
           </div>
           <div class="container" fxFlex="60"></div>
           <div class="container" fxFlex>
-            <form class="form-inline mr-auto">
+            <form [formGroup]="searchForm" class="form-inline mr-auto">
               <div class="md-form my-0">
                 <mat-icon class="navIcon" svgIcon="search"></mat-icon>
                 <input class="form-control" type="text" placeholder="search here..." onfocus="this.placeholder=''"
@@ -144,7 +144,7 @@
           </span>
         </a>
         <a href="#" mat-raised-button class="side-button">Ask Question</a>
-        <form class="form-inline mr-auto side-form">
+        <form [formGroup]="searchForm" class="form-inline mr-auto side-form">
           <div class="md-form my-0" style="width: 100%;">
             <button mat-raised-button class="side-button">Search</button>
             <input class="form-control side-input" type="text" placeholder="search here..." onfocus="this.placeholder=''"

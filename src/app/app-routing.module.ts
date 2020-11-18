@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BadgeComponent } from './badge/badge.component';
 import { AddPostComponent } from './add-post/add-post.component';
@@ -11,6 +12,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'contact-us', component: ContactUsComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'ask-question', component: AskQuestionComponent},
   {path: 'questions', component: QuestionsComponent},
   {path: 'add-post', component: AddPostComponent},

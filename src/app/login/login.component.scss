@@ -1,0 +1,53 @@
+.container{
+  background-color: #2f3239;
+  margin: unset;
+  max-width: 100%;
+}
+h1 {
+  color: #ffffdf;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+p {
+  color: #c2c8d4;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+.btn-login {
+  background-color: #fe7361;
+  color: white;
+  width: 100%;
+}
+.navIcon {
+  color: #fe7361;
+  position: absolute;
+  padding-top: 7px;
+  width: 32px;
+  height: 28px;
+}
+
+input{
+  background-color: #373b43;
+  text-indent: 20px;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400px;
+}
+
+form{
+  margin-bottom: 10px;
+}
+
+.input-group-prepend{
+  background-color: #373b43;
+
+}

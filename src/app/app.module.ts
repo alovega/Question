@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
@@ -29,6 +31,7 @@ import { CardComponent } from './card/card.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -45,7 +48,8 @@ import { ProfileComponent } from './profile/profile.component';
     CardComponent,
     DataTableComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatMenuModule,
     NgbModule,
     MDBBootstrapModule.forRoot(),
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
