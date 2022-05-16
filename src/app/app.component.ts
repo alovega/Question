@@ -10,6 +10,7 @@ export class AppComponent implements OnInit{
   title = 'Questions';
 
   constructor(private iconService: IconService) {
+    this.iconService.registerIcons();
   }
 
   ngOnInit(): void {

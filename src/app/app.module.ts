@@ -48,7 +48,7 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     ProfileComponent
   ],
-  imports: [
+  imports:[
     BrowserModule,
     HttpClientModule,
     MatToolbarModule,
