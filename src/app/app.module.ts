@@ -7,6 +7,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs'; 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -54,6 +55,7 @@ import { ProfileComponent } from './profile/profile.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatTabsModule,
     MatIconModule,
     MatGridListModule,
     FlexLayoutModule,
