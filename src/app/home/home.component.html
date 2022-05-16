@@ -26,11 +26,61 @@
     </div>
   </div>
   <div class="row tab">
-    <mat-tab-group>
-      <mat-tab label="First"> Content 1 </mat-tab>
-      <mat-tab label="Second"> Content 2 </mat-tab>
-      <mat-tab label="Third"> Content 3 </mat-tab>
-    </mat-tab-group>
+    <div class="col-md-9">
+      <div class="tabs-warp question-tab">
+        <ul ngbNav #nav="ngbNav" class="nav-tabs">
+          <li  ngbNavItem>
+            <a class="current" ngbNavLink>Recent Questions</a>
+            <ng-template ngbNavContent>
+              <div class="card text-center">
+                <div class="card-header">
+                  This is my First Question
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
+                </div>
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem>
+            <a class="current" ngbNavLink>Most Responses</a>
+            <ng-template ngbNavContent>
+              <div class="tab-inner card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem>
+            <a class="current" ngbNavLink>Recently Answered</a>
+            <ng-template ngbNavContent>
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </ng-template>
+          </li>
+          <li ngbNavItem>
+            <a class="current" ngbNavLink>No  Answers</a>
+            <ng-template ngbNavContent>
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+        <div class="tab-inner" [ngbNavOutlet]="nav"></div>
+      </div>
+    </div>
   </div>
   
 </div>
