@@ -40,9 +40,42 @@ body {
   padding: 0;
 }
 
-.btn{
+.button{
   background-color: #ff7361;
   color: #fff
+}
+
+.widget {
+  margin-bottom: 30px;
+  color: #2f3239;
+  padding: 20px;
+  background: #fff;
+  -moz-box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+  box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+  border-bottom: 1px solid #dedede;
+}
+
+.widget .widget_title {
+  margin: -20px 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0 10px;
+  border-bottom: 2px solid #dedede;
+  position: relative;
+}
+
+.widget_title{
+  color: #ff7361
+}
+
+.widget_stats ul li, .user-profile-widget .ul_list li {
+  color: #2f3239;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #eaeaeb;
+  margin-bottom: 10px;
+  padding: 10px !important;
 }
 
 

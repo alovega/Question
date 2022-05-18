@@ -24,6 +24,8 @@ export enum Icons {
   comments_solid = 'comments_solid',
   calendar_solid = 'calendar_solid',
   eye_solid = 'eye_solid',
-  star_solid = 'star_solid' 
+  star_solid = 'star_solid',
+  comment_solid = 'comment_solid',
+  asterisk_solid = 'asterisk_solid'
 
 }
