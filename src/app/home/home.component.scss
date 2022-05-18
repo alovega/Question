@@ -14,8 +14,7 @@
 }
 
 .tab{
- background-color: #ffffff;
- display: inherit;
+ background-color: #efefef;
 }
 h2 {
   font-weight: 700;
@@ -106,6 +105,7 @@ textarea:focus {
 
 .nav-tabs{
   border-bottom: 2px solid #ff7361;
+  margin-bottom: 30px;
 }
 
 a.current {
@@ -117,4 +117,11 @@ a.current {
 .tab a.current.active{
   background-color: #ff7361;
   color: #ffffff;
+}
+
+.widget_ask > a {
+  margin-bottom: 30px !important;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px !important;
 }

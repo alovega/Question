@@ -32,55 +32,40 @@
           <li  ngbNavItem>
             <a class="current" ngbNavLink>Recent Questions</a>
             <ng-template ngbNavContent>
-              <div class="card text-center">
-                <div class="card-header">
-                  This is my First Question
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">
-                  2 days ago
-                </div>
-              </div>
+              <app-card></app-card>
             </ng-template>
           </li>
           <li ngbNavItem>
             <a class="current" ngbNavLink>Most Responses</a>
             <ng-template ngbNavContent>
-              <div class="tab-inner card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
+              <app-card></app-card>
             </ng-template>
           </li>
           <li ngbNavItem>
             <a class="current" ngbNavLink>Recently Answered</a>
             <ng-template ngbNavContent>
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
+              <app-card></app-card>
             </ng-template>
           </li>
           <li ngbNavItem>
             <a class="current" ngbNavLink>No  Answers</a>
             <ng-template ngbNavContent>
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
             </ng-template>
           </li>
         </ul>
         <div class="tab-inner" [ngbNavOutlet]="nav"></div>
       </div>
     </div>
+    <div class="col-md-3">
+      <div class="stickySideBar tabs-warp">
+        <div class="widget_ask">
+          <a href="" class="btn">
+            Ask a question
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
   </div>
   
 </div>

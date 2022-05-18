@@ -18,6 +18,12 @@ export enum Icons {
   info = 'info',
   question = 'question',
   list = 'list',
-  pen_square = 'pen_square'
+  pen_square = 'pen_square',
+  folder_closed_solid = 'folder_closed_solid',
+  check_solid = 'check_solid',
+  comments_solid = 'comments_solid',
+  calendar_solid = 'calendar_solid',
+  eye_solid = 'eye_solid',
+  star_solid = 'star_solid' 
 
 }

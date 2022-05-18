@@ -4,7 +4,45 @@
 @import '~bootstrap/scss/bootstrap';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Open Sans", "Droid Arabic Kufi", Arial, sans-serif; }
+body { 
+  margin: 0; font-family: "Open Sans", "Droid Arabic Kufi", Arial, sans-serif;
+  background-color: #abb8c3; 
+}
+
 :root {
   --image-url: src\assets\images\researching.jpg;
 }
+
+.row .tab{
+  background-color: #efefef;
+}
+
+.post-content, .question-desc, .single-question .comment-text .text, .single-question .comment-text .text p {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.question .question-answered, .question .question-answered i {
+  font-size: 13px;
+}
+
+.question-reply, .question-date, .author-message, .message-reply, .message-delete, .question-view, .question-points, .question-vote-all, .question-comment, .question-category, .question-author-meta, .question-tags, .post-tags, .question-favorite, .question-answered {
+  margin: 0 20px 0 0;
+  float: left;
+  display: block;
+}
+
+.question-answered mat-icon, .question-favorite mat-icon{
+  font-size: 13px;
+}
+.question-tab .tab-inner-warp {
+  background: 0 0;
+  padding: 0;
+}
+
+.btn{
+  background-color: #ff7361;
+  color: #fff
+}
+
+
