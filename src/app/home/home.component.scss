@@ -118,33 +118,3 @@ a.current {
   background-color: #ff7361;
   color: #ffffff;
 }
-
-.widget_ask > a {
-  margin-bottom: 30px !important;
-  width: 100%;
-  text-align: center;
-  padding: 10px 15px !important;
-}
-
-.widget ul{
-  list-style: none;
-  padding: 0;
-}
-
-mat-icon{
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-ul_list li {
-  line-height: 25px;
-  margin-bottom: 5px;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  transition: all .2s linear;
-  list-style: none;
-  color: #2f3239;
-  font-size: 13px;
-}

@@ -30,10 +30,11 @@ import { CardComponent } from './card/card.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     NavigationComponent,
     FooterComponent,
@@ -46,8 +47,9 @@ import { ProfileComponent } from './profile/profile.component';
     CardComponent,
     DataTableComponent,
     LoginComponent,
-    ProfileComponent
-  ],
+    ProfileComponent,
+      AnalyticsComponent
+   ],
   imports:[
     BrowserModule,
     HttpClientModule,
