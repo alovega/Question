@@ -97,12 +97,6 @@ textarea:focus {
   }
 }
 
-.tabs-warp {
-  margin-bottom: 30px;
-  padding-top: 70px;
-
-}
-
 .nav-tabs{
   border-bottom: 2px solid #ff7361;
   margin-bottom: 30px;
@@ -117,4 +111,14 @@ a.current {
 .tab a.current.active{
   background-color: #ff7361;
   color: #ffffff;
+}
+
+.tabs-warp {
+  margin-bottom: 30px;
+  padding-top: 70px;
+
+}
+
+.col-md-3{
+  padding-top: 70px;
 }

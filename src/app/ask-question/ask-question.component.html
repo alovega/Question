@@ -1,5 +1,5 @@
 <div class="breadcrumbs">
-    <section class="container">
+    <section class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h1>Ask Questions</h1>
@@ -15,7 +15,7 @@
 </div>
 <div class="index-no-box"></div>
 <div class="section-warp big-search top-after-header">
-    <div class="container clearfix">
+    <div class="container-fluid clearfix">
         <div class="box_icon">
             <div class="row">
                 <div class="col-md-12">
@@ -32,9 +32,95 @@
     </div>
 </div>
 
-<section class="main-content container">
+<section class="main-content container-fluid">
     <div class="row">
-        <div class="col-md-9"></div>
+        <div class="col-md-9">
+            <div class="page-content">
+                <div class="boxed-title">
+                    <h2>Ask Question</h2>
+                </div>
+                <div class="form-posts">
+                    <div class="ask-question">
+                        <form class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="title"> Question Title <span>*</span></label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="form-control" type="text" name="title" id="">
+                                    <span class="form-description">
+                                        Please Choose an appropriate title for the question to answer it even
+                                        easier
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="category"> Category <span>*</span></label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Select a Category</option>
+                                        <option>Analytics</option>
+                                        <option>Company</option>
+                                        <option>Language</option>
+                                        <option>Programming</option>
+                                        <option>Science</option>
+                                      </select>
+                                    <span class="form-description">
+                                        Please Choose the appropriate category so others can easily search for your question
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="title"> Tags<span>*</span></label>
+                                </div>
+                                <div class="col-md-9">
+                                    <tag-input [(ngModel)]="items"></tag-input>
+                                    <span class="form-description">
+                                        Please choose suitable Keywords Ex : 
+                                        <span class="color">question , poll .</span> 
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="title"> Tags<span>*</span></label>
+                                </div>
+                                <div class="col-md-9">
+                                    <md-editor name="Content" 
+                                        [upload]="doUpload" 
+                                        [preRender]="preRender" 
+                                        [postRender]="postRender"
+                                        [(ngModel)]="htmlContent" 
+                                        [height]="'400px'"
+                                        [options]="options" 
+                                        [mode]="mode" 
+                                        (onEditorLoaded)="onEditorLoaded($event)"
+                                        (onPreviewDomChanged)="onPreviewDomChanged($event)"
+                                        required 
+                                        maxlength="500">
+                                    </md-editor>
+                                    <span class="form-description">
+                                        Please choose suitable Keywords Ex : 
+                                        <span class="color">question , poll .</span> 
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="btn button color small submit" type="submit" value="Publish Your Question">
+                                </div>    
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-md-3">
             <app-analytics></app-analytics>
         </div>

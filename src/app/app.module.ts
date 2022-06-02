@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
-
+import { LMarkdownEditorModule } from 'ngx-markdown-editor';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { AppRoutingModule } from './app-routing.module';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
+import { TagInputModule } from 'ngx-chips';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs'; 
@@ -27,7 +28,7 @@ import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { BadgeComponent } from './badge/badge.component';
 import { CardComponent } from './card/card.component';
-import { DataTableComponent } from './data-table/data-table.component';
+import { QuestionTableComponent } from './question-table/question-table.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
@@ -45,12 +46,15 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     AddPostComponent,
     BadgeComponent,
     CardComponent,
-    DataTableComponent,
+    QuestionTableComponent,
     LoginComponent,
     ProfileComponent,
-      AnalyticsComponent
+    AnalyticsComponent
    ],
   imports:[
+    TagInputModule,
+    LMarkdownEditorModule,
+    NgxDatatableModule,
     BrowserModule,
     HttpClientModule,
     MatToolbarModule,
@@ -63,13 +67,13 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     FlexLayoutModule,
     MatMenuModule,
     NgbModule,
-    MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
   providers: [
     {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: AppGlobalRippleOptions}
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

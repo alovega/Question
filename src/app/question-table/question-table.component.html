@@ -1,0 +1,92 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="section-warp big-search top-after-header">
+            <div class="container-fluid clearfix">
+                <div class="box_icon">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="" class="form">
+                                <div class="search-p">
+                                    <input type="text" class="live-search" placeholder="search here...">
+                                    <mat-icon id="icon" svgIcon="search"></mat-icon>
+                                    <button class="btn ask-search"> search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <ngx-datatable [columns]="columns" [rows] = "rows" rowHeight="fit-content" columnMode="force">
+                
+              <ng-template #hdrTpl let-column="column"> {{ column.name }} </ng-template>
+              <ng-template #editTmpl let-row="row" let-value="value" width="500">
+                  <!-- <app-card></app-card> -->
+                    <div class="question">
+                        <h2>
+                        <a href="">
+                            <span>
+                               {{row.title}}
+                            </span> 
+                        </a>
+                    </h2>
+                    <div class="question-author">
+                        <a class="question-author-img" href="">
+                            <span></span>
+                            <img src="../../assets/images/1152px-Line-style-icons-profile-male.svg.png" alt="profile">
+                        </a>
+                    </div>
+                    <div class="question-inner">
+                        <div class="clearfix"></div>
+                        <div class="question-desc">
+                        <div class="text">
+                            {{row.description}}
+                        </div>
+                        </div>
+                        <div class="question-details">
+                            <span class="question-answered">
+                                <mat-icon svgIcon="check_solid"></mat-icon>
+                                {{row.status}}
+                            </span>
+                            <span class="question-favorite">
+                                <mat-icon svgIcon="star_solid"></mat-icon>
+                                {{row.answers}}
+                            </span>
+                        </div>
+                        <span class="question-category">
+                            <mat-icon svgIcon="folder_closed_solid"></mat-icon>
+                            {{row.badge}}
+                        </span>
+                        <span class="question-date">
+                            <mat-icon svgIcon="calendar_solid"></mat-icon>
+                             {{row.dateCreated | date}}
+                        </span>
+                        <span class="question-comment">
+                            <mat-icon svgIcon="comments_solid"></mat-icon>
+                            4
+                        </span>
+                
+                        <span class="question-view">
+                            <mat-icon svgIcon="eye_solid"></mat-icon>
+                            100
+                        </span>
+                        <span class="badge-span" style="background-color: #dd3333"> Teacher</span>
+                
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+              </ng-template>
+            </ngx-datatable>
+        </div>
+        
+        <div class="col-md-3">
+            <app-analytics></app-analytics>
+        </div>
+    </div>
+
+</div>
+

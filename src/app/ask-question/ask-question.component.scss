@@ -22,6 +22,7 @@
     text-transform: none;
     margin-top: 0;
     margin-bottom: 18px;
+    color: #ff7361;
   }
 
   .crumbs {
@@ -122,4 +123,66 @@
   .top-after-header .col-md-12 .btn {
     bottom: 6px;
     right: 6px;
+  }
+
+  .page-content{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    -moz-box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+    -webkit-box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+    box-shadow: 0 1px 5px -1px rgba(0,0,0,.13);
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+  }
+
+  .boxed-title {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: 0 0;
+    position: relative;
+    margin-bottom: 10px !important;
+  }
+
+  .boxed-title h2 {
+    padding: 20px 0 10px;
+    margin: 0 20px 20px 0;
+    border-bottom: 2px solid #dedede;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .col-md-9 > input, .col-md-9 > select, .col-md-9 > textarea{
+    width: 100%;
+  }
+
+  .form-posts .form-description {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .form-group span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #707885;
+  }
+
+  .form-group span.color {
+    color: #b9b7b7;
+  }
+
+  .form-group input.submit{
+    font-size: 15px;
+    width: 97%;
+    font-weight: 600;
+    float: right;
+    padding: 7px 15px;
+  }
+
+  select{
+    color: #ff7361;
   }
