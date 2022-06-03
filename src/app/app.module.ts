@@ -34,10 +34,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { SearchComponent } from './search/search.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { AnswerComponent } from './answer/answer.component';
 
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     NavigationComponent,
     FooterComponent,
@@ -53,7 +54,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     ProfileComponent,
     AnalyticsComponent,
     SearchComponent,
-      BreadcrumbComponent
+      BreadcrumbComponent,
+      AnswerComponent
    ],
   imports:[
     TagInputModule,

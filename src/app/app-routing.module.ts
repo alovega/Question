@@ -7,6 +7,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AnswerComponent } from './answer/answer.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'questions', component: QuestionsComponent},
   {path: 'add-post', component: AddPostComponent},
   {path: 'badges', component: BadgeComponent},
-  {path: 'profile', component: ProfileComponent}
+  {path: 'profile', component: ProfileComponent},
+  {path: ':answer-title', component: AnswerComponent},
 ];
 
 @NgModule({

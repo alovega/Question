@@ -1,0 +1,70 @@
+<app-breadcrumb [page]="question"></app-breadcrumb>
+<div class="container">
+  <app-search></app-search>
+  <div class="row">
+    <div class="col-md-9">
+      <div id="question">
+        <article class="question single-question">
+          <h2> 
+            <span> {{question}} </span>
+          </h2>
+          <a href="#" class="question-report">
+            report
+          </a>
+          <div class="question-type-main">
+            <mat-icon svgIcon="question" class="small"></mat-icon>
+            <span class="icon"> Question </span>
+          </div>
+          <div class="question-inner">
+            <div class="clearfix"></div>
+            <div class="question-desc">
+              <div class="text">
+                  <p>
+                    {{question_body}}
+                  </p>
+              </div>
+              <a href="" class="btn button favorite"> Add question to Favorites</a>
+              <div class="clearfix"></div>
+              <a href="" class="btn button favorite"> Follow</a>
+            </div>
+            
+              <div class="question-details">
+                  <span class="question-answered">
+                      <mat-icon svgIcon="check_solid"></mat-icon>
+                      in progress
+                  </span>
+                  <span class="question-favorite">
+                      <mat-icon svgIcon="star_solid"></mat-icon>
+                      10
+                  </span>
+              </div>
+              <span class="question-category">
+                  <mat-icon svgIcon="folder_closed_solid"></mat-icon>
+                  Programming
+              </span>
+              <span class="question-date">
+                  <mat-icon svgIcon="calendar_solid"></mat-icon>
+                  3 years
+              </span>
+              <span class="question-comment">
+                  <mat-icon svgIcon="comments_solid"></mat-icon>
+                  4
+              </span>
+      
+              <span class="question-view">
+                  <mat-icon svgIcon="eye_solid"></mat-icon>
+                  100
+              </span>
+              <span class="badge-span" style="background-color: #dd3333"> Teacher</span>
+      
+              <div class="clearfix"></div>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+    <div class="col-md-3">
+      <app-analytics></app-analytics>
+    </div>
+  </div>
+</div>
