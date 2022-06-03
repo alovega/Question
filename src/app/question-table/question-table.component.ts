@@ -14,8 +14,8 @@ export class QuestionTableComponent implements OnInit {
   currentPage: any
   searchable: boolean
   data:any  = {
-      title: faker.lorem.words(2), 
-      description: faker.lorem.paragraph(), 
+      title: faker.lorem.words(20), 
+      description: faker.lorem.paragraphs(2), 
       status: 'in progress',
       dateCreated: faker.date.between('2020-01-01T00:00:00.000Z', '2022-01-01T00:00:00.000Z'),
       answers: faker.random.numeric(),

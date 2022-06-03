@@ -3,7 +3,7 @@
     <app-search></app-search>
     <div class="row">
         <div class="col-md-9">
-            <ngx-datatable [columns]="columns" [rows] = "rows" rowHeight="fit-content" columnMode="force">
+            <ngx-datatable [columns]="columns" [rows] = "rows"  rowHeight="auto" columnMode="force">
                 
               <ng-template #hdrTpl let-column="column"> {{ column.name }} </ng-template>
               <ng-template #editTmpl let-row="row" let-value="value" width="500">
