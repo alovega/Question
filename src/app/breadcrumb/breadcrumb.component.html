@@ -1,0 +1,54 @@
+<div class="breadcrumbs">
+  <section class="container">
+      <div class="row">
+        <div class="col-md-12" *ngIf="!searchable; else elseBlock">
+            <h1 id="header">{{page}}</h1>
+            <div class="clearfix"></div>
+            <div class="crumbs">
+                <a href="">Home</a>
+                <span class="crumbs-span">/</span>
+                <span class="current">{{page}}</span>
+            </div>
+        </div>
+        <ng-template #elseBlock>
+          <div class="col-md-6">
+            <h1 id="header">{{page}}</h1>
+            <div class="clearfix"></div>
+            <div class="crumbs">
+                <a href="">Home</a>
+                <span class="crumbs-span">/</span>
+                <span class="current">{{page}}</span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="search">
+              <div class="row">
+                <div class="search-filter-form col-md-6">
+                  <span class="styled-select">
+                    <select name="" id="" class="home-categories">
+                      <option>Select a Category</option>
+                      <option>Analytics</option>
+                      <option>Company</option>
+                      <option>Language</option>
+                      <option>Programming</option>
+                      <option>Science</option>
+                    </select>
+                  </span>
+                </div>
+
+                <div class="search-input-form col-md-6">
+                  <form action="" class="search-input-form">
+                    <input type="search" class="live-search" placeholder="Type to find...">
+                    <button class="button-search">
+                      <mat-icon svgIcon="search"></mat-icon>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>     
+      </div>
+  </section>
+</div>
+<div class="index-no-box"></div>

@@ -19,6 +19,12 @@ body, mat-sidenav-content{
   background-color: #efefef;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .post-content, .question-desc, .single-question .comment-text .text, .single-question .comment-text .text p {
   line-height: 30px;
   font-size: 15px;
@@ -137,4 +143,10 @@ input, textarea, select, .form-control{
 
 .form-group .row{
   margin-bottom: 30px;
+}
+
+@media(min-width: 1200px){
+  .container{
+    max-width: 1330px;
+  }
 }

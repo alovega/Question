@@ -5,10 +5,17 @@ export enum Icons {
   emoji_events= 'emoji_events',
   search= 'search',
   facebook = 'facebook',
+  facebook_colored = 'facebook_colored',
   github = 'github',
+  github_colored = 'github_colored',
   linkedin = 'linkedin',
+  linkedin_colored = 'linkedin_colored',
+  instagram_colored = 'instagram_colored',
+  pintrest_colored = 'pintrest_colored',
+  youtube_colored = 'youtube_colored',
   skype = 'skype',
   twitter = 'twitter',
+  twitter_colored = 'twitter_colored',
   medium = 'medium',
   arrow_drop_down = 'arrow_drop_down',
   home = 'home',
@@ -26,6 +33,10 @@ export enum Icons {
   eye_solid = 'eye_solid',
   star_solid = 'star_solid',
   comment_solid = 'comment_solid',
-  asterisk_solid = 'asterisk_solid'
+  asterisk_solid = 'asterisk_solid',
+  location = 'location',
+  mail = 'mail',
+  phone = 'phone',
+  share = 'share'
 
 }

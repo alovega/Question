@@ -8,6 +8,7 @@ import { MdEditorOption, UploadResult } from 'ngx-markdown-editor';
 })
 
 export class AskQuestionComponent implements OnInit {
+  currentPage = 'Ask Question'
   items: any = []
   htmlContent: String
   mode: string = "editor";

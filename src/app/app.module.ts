@@ -32,10 +32,12 @@ import { QuestionTableComponent } from './question-table/question-table.componen
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
+import { SearchComponent } from './search/search.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     NavigationComponent,
     FooterComponent,
@@ -49,7 +51,9 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     QuestionTableComponent,
     LoginComponent,
     ProfileComponent,
-    AnalyticsComponent
+    AnalyticsComponent,
+    SearchComponent,
+      BreadcrumbComponent
    ],
   imports:[
     TagInputModule,
@@ -74,6 +78,9 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: AppGlobalRippleOptions}
   ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+  exports: [
+    SearchComponent
+  ]
 })
 export class AppModule { }

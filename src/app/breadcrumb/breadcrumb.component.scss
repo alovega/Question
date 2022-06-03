@@ -1,0 +1,80 @@
+.breadcrumbs .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 991;
+    margin: 0;
+  }
+
+  .breadcrumbs h1 {
+    float: left;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  #header{
+      color: #fff;
+  }
+
+  h1{
+      line-height: 30px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: open sans,droid arabic kufi,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #ff7361;
+  }
+
+  .crumbs {
+    float: left;
+    line-height: 24px;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+
+  .crumbs-span {
+    margin: 0 5px;
+  }
+
+  .crumbs a{
+      color: #fff
+  }
+
+  .crumbs .current {
+    color: #2f3239;
+  }
+
+.index-no-box {
+    margin-bottom: 70px;
+  }
+
+.search{
+    line-height: 22px;
+    margin-top: 14.5px;
+}
+
+.search .styled-select .home-categories{
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    color:#ff7361
+}
+
+.search  .search-input-form .live-search{
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+}
+
+.button-search{
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    background: 0 0;
+    border: none;
+    font-size: 15px;
+}

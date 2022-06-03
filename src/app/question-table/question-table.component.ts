@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { faker } from '@faker-js/faker';
 
 @Component({
@@ -7,11 +7,12 @@ import { faker } from '@faker-js/faker';
   styleUrls: ['./question-table.component.scss']
 })
 
-export class QuestionTableComponent implements OnInit, AfterViewInit {
+export class QuestionTableComponent implements OnInit {
   @ViewChild('editTmpl', { static: true }) editTmpl: TemplateRef<any>;
   @ViewChild('hdrTpl', { static: true }) hdrTpl: TemplateRef<any>;
   @ViewChild('table', { static: true }) table: any;
-
+  currentPage: any
+  searchable: boolean
   data:any  = {
       title: faker.lorem.words(2), 
       description: faker.lorem.paragraph(), 
@@ -29,10 +30,8 @@ export class QuestionTableComponent implements OnInit, AfterViewInit {
 
   
   ngOnInit(): void {
-    
-  }
-
-  ngAfterViewInit(): void {
+    this.currentPage = 'Questions'
+    this.searchable = true
     this.columns = [
       {
         headerTemplate: this.hdrTpl,
@@ -41,7 +40,5 @@ export class QuestionTableComponent implements OnInit, AfterViewInit {
       }
     ];
   }
-
-  
 
 }

@@ -1,37 +1,5 @@
-<div class="breadcrumbs">
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Ask Questions</h1>
-                <div class="clearfix"></div>
-                <div class="crumbs">
-                    <a href="">Home</a>
-                    <span class="crumbs-span">/</span>
-                    <span class="current">Ask Question</span>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<div class="index-no-box"></div>
-<div class="section-warp big-search top-after-header">
-    <div class="container-fluid clearfix">
-        <div class="box_icon">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="" class="form">
-                        <div class="search-p">
-                            <input type="text" class="live-search" placeholder="search here...">
-                            <mat-icon svgIcon="search"></mat-icon>
-                            <button class="btn ask-search"> search</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+<app-breadcrumb [page]="currentPage"></app-breadcrumb>
+<app-search></app-search>
 <section class="main-content container-fluid">
     <div class="row">
         <div class="col-md-9">

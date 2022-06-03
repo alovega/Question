@@ -1,1 +1,121 @@
-<p>contact-us works!</p>
+<app-breadcrumb [page]="currentPage"></app-breadcrumb>
+<div class="container">
+    <app-search></app-search>
+    <div class="row">
+        <div class="main-sidebar col-md-12">
+            <div class="page-content">
+                <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kitengela%20Town+(Alovega%20consultancy)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" frameborder="0"><a href="https://www.gps.ie/wearable-gps/">wearable trackers</a></iframe>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-7 contact-us">
+            <div class="page-content">
+                <h2>Contact Us</h2>
+                <p>{{contactMessage}}</p>
+                <form action="" class="form-group clearfix">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="title"> Your Name <span>*</span></label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="title" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="title"> Your Email <span>*</span></label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="email" name="title" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="title"> Subject </label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="title" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="title"> Your Message </label>
+                        </div>
+                        <div class="col-md-9">
+                            <textarea name="" id="" cols="58" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input class="btn button color small submit" type="submit" value="Send">
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5 contact us">
+            <div class="page-content">
+                <h2>About Us</h2>
+                <p>{{aboutMessage}}</p>
+                <div class="widget widget_contact">
+                    <ul>
+                        <li>
+                            <mat-icon svgIcon="location"></mat-icon>
+                            <span>
+                                Address:
+                            </span>
+                            <p>
+                                Ask Me Network, Baraka Road, Kelvin Alovega, Nairobi, Kenya
+                            </p>
+                        </li>
+                        <li>
+                            <mat-icon svgIcon="phone"></mat-icon>
+                            <span>
+                                Phone Number:
+                            </span>
+                            <p>
+                                (+254)704505646
+                            </p>
+                        </li>
+                        <li>
+                            <mat-icon svgIcon="mail"></mat-icon>
+                            <span>E-mail: </span>
+                            <p>
+                                alovegakevin@gmail.com
+                            </p>
+                        </li>
+                        <li>
+                            <mat-icon svgIcon="share"></mat-icon>
+                            <span>Social Links: </span>
+                            <p>
+                                <a href="https://www.facebook.com/kevin.alovega/" class="tooltip-n" title="facebook">
+                                    <mat-icon svgIcon="facebook_colored" class="icon_square"></mat-icon>
+                                </a>
+                                <a href="https://twitter.com/AlovegaK" class="tooltip-n" title="twitter">
+                                    <mat-icon class="icon_square" svgIcon="twitter_colored"></mat-icon>
+                                </a>
+                                <a href="https://github.com/alovega" class="tooltip-n">
+                                    <mat-icon class="icon_square" svgIcon="github_colored"></mat-icon>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCIn8388iwBEiLJNQt2c_2ZQ" class="tooltip-n">
+                                    <mat-icon class="icon_square" svgIcon="youtube_colored"></mat-icon>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kelvin-alwavega-403843116" class="tooltip-n">
+                                    <mat-icon class="icon_square" svgIcon="linkedin_colored"></mat-icon>
+                                </a>
+                                <a href="https://www.pinterest.com/kevinalovega/_saved/" class="tooltip-n">
+                                    <mat-icon class="icon_square" svgIcon="pintrest_colored"></mat-icon>
+                                </a>
+                                <a href="https://www.instagram.com/alovegakevin/" class="tooltip-n">
+                                    <mat-icon class="icon_square" svgIcon="instagram_colored"></mat-icon>
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
